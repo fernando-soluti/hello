@@ -24,5 +24,9 @@ class GreeterTest extends TestCase {
 			"Hello, Sarah",
 			$greeter->greet("Sarah")
 		);
+		self::assertStringContainsString(
+			"Hellow",
+			$greeter->greet("")
+		);
 	}
 }
